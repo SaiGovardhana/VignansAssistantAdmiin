@@ -18,17 +18,17 @@
         
         <!-- Start Of Content for the Page its flex grow is 1 occupies remaining space -->
         <div class="d-flex flex-column align-items-center justify-content-evenly flex-grow-1 ">
-            <div class="text-center h1  fw-bolder text-primary mt-3">ADMIN <br>PORTAL</div>
+            <div class="text-center h1  fw-bolder text-primary mt-3">Upload Attendance</div>
+            <div class="alert alert-danger text-center" role="alert">
+                NOTE: Excel must have sheet called 'attendance', with columns 'REGD','NAME','Attendance'
+              </div>
             <img src="resources/brand.png" width="70" height="70" class=" mx-3 d-inline-block align-top" alt="">
+
             <div>
-                <div class="text-center h4  fw-bolder text-primary ">Enter User:</div>
-                <input type="text" class="form-control w-auto " id="userName" placeholder="Enter Username">
+                <div class="text-center h4  fw-bolder text-primary mt-2">Upload excel sheet:</div>
+                <input type="file" class="form-control w-auto " id="attendance" placeholder="Upload sheet">
             </div>
-            <div>
-                <div class="text-center h4  fw-bolder text-primary mt-2">Enter Password:</div>
-                <input type="password" class="form-control w-auto " id="password" placeholder="Enter Password">
-            </div>
-            <a href="./HomePage.html" class="btn btn-outline-primary m-3">LOGIN</a>
+            <button type="button" class="btn btn-outline-primary m-3">Upload</button>
         </div>
     <!-- End Of Content for the Page-->
 
